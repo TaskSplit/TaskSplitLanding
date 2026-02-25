@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Split | Conquer the Complex</title>
     
-    <!-- Fonts -->
+    <title>Task Split AI | Conquer Complex Projects with AI Task Breakdown</title>
+    <meta name="title" content="Task Split AI | Conquer Complex Projects with AI Task Breakdown">
+    <meta name="description" content="Task Split AI automatically breaks down your most daunting projects into bite-sized, actionable steps. Stop procrastination and conquer the complex with our AI task decomposition engine.">
+    <meta name="keywords" content="AI task manager, project breakdown, task decomposition, productivity tool, tasksplit, tasksplit ai, manage complex tasks, micro-tasks">
+    <meta name="author" content="Task Split">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tasksplitai.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tasksplitai.com/">
+    <meta property="og:title" content="Task Split AI | Conquer the Complex">
+    <meta property="og:description" content="Break down daunting projects into actionable micro-tasks automatically using AI.">
+    <meta property="og:image" content="https://tasksplitai.com/og-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tasksplitai.com/">
+    <meta property="twitter:title" content="Task Split AI | Conquer the Complex">
+    <meta property="twitter:description" content="Break down daunting projects into actionable micro-tasks automatically using AI.">
+    <meta property="twitter:image" content="https://tasksplitai.com/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Task Split AI",
+      "operatingSystem": "Web",
+      "applicationCategory": "ProductivityApplication",
+      "description": "Automatically breaks down daunting projects into bite-sized, actionable micro-tasks using AI.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -32,7 +63,6 @@
         }
     </script>
 
-    <!-- Custom CSS for Glassmorphism & Utilities -->
     <style>
         body {
             background-color: #0B0514;
@@ -41,7 +71,6 @@
             font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* 3D Canvas Background */
         #webgl-container {
             position: fixed;
             top: 0;
@@ -49,10 +78,9 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
-            pointer-events: none; /* Let clicks pass through to UI */
+            pointer-events: none;
         }
 
-        /* Modern Glass UI */
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(16px);
@@ -69,7 +97,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Text Gradients */
         .text-gradient {
             background: linear-gradient(135deg, #E9D5FF 0%, #D946EF 100%);
             -webkit-background-clip: text;
@@ -77,7 +104,6 @@
             background-clip: text;
         }
 
-        /* Floating Animation for UI elements */
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -90,7 +116,6 @@
             animation: float 6s ease-in-out 3s infinite;
         }
 
-        /* Hide scrollbar for cleaner look */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -108,10 +133,8 @@
 </head>
 <body class="antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- Three.js Canvas Container -->
-    <div id="webgl-container"></div>
+    <div id="webgl-container" role="img" aria-label="3D Abstract visualization of task decomposition and productivity flow"></div>
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2 font-bold text-2xl tracking-tighter cursor-pointer">
@@ -123,10 +146,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="relative z-10">
         
-        <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center px-6 pt-20">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border-brand-primary/30 text-brand-light text-sm font-medium mb-8 animate-float">
@@ -156,11 +177,9 @@
             </div>
         </section>
 
-        <!-- How it Works Section -->
         <section id="how-it-works" class="min-h-screen flex items-center py-24 relative">
             <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
                 
-                <!-- Left: Text -->
                 <div class="order-2 lg:order-1">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">
                         From <span class="text-red-400">Overwhelming</span><br>
@@ -203,14 +222,11 @@
                     </div>
                 </div>
 
-                <!-- Right: Visual/Empty space for 3D emphasis -->
                 <div class="order-1 lg:order-2 h-[50vh] lg:h-auto relative">
-                    <!-- The 3D canvas is behind this, the split animation happens here visually -->
-                </div>
+                    </div>
             </div>
         </section>
 
-        <!-- Waitlist / CTA Section -->
         <section id="waitlist" class="py-32 relative overflow-hidden">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
             
@@ -228,7 +244,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="border-t border-white/10 py-10 glass-nav mt-20 relative z-10">
             <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center font-bold text-xl tracking-tighter">
@@ -239,7 +254,7 @@
                     <a href="mailto:tasksplit.info@gmail.com" class="hover:text-brand-accent transition-colors">
                         tasksplit.info@gmail.com
                     </a>
-                    <a href="https://www.instagram.com/tasksplit?igsh=cm44eXYwMjRqOWVl" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-accent transition-colors">
+                    <a href="https://www.instagram.com/tasksplit" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-accent transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
                         Instagram
                     </a>
@@ -253,15 +268,10 @@
 
     </main>
 
-    <!-- Three.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <!-- Custom WebGL Script -->
     <script>
-        // --- WebGL Setup ---
         const container = document.getElementById('webgl-container');
         const scene = new THREE.Scene();
-        // Add a subtle purple fog to blend objects into the deep background
         scene.fog = new THREE.FogExp2(0x0B0514, 0.03);
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -269,27 +279,24 @@
 
         const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // optimize for high DPI
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         container.appendChild(renderer.domElement);
 
-        // --- Lighting ---
-        const ambientLight = new THREE.AmbientLight(0x4C1D95, 1.5); // Deep purple ambient
+        const ambientLight = new THREE.AmbientLight(0x4C1D95, 1.5);
         scene.add(ambientLight);
 
         const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
         directionalLight.position.set(5, 10, 7);
         scene.add(directionalLight);
 
-        const pointLight1 = new THREE.PointLight(0xD946EF, 2, 50); // Fuchsia accent
+        const pointLight1 = new THREE.PointLight(0xD946EF, 2, 50);
         pointLight1.position.set(-5, 5, 5);
         scene.add(pointLight1);
 
-        const pointLight2 = new THREE.PointLight(0x7C3AED, 2, 50); // Violet primary
+        const pointLight2 = new THREE.PointLight(0x7C3AED, 2, 50);
         pointLight2.position.set(5, -5, 5);
         scene.add(pointLight2);
 
-        // --- Materials (Modern Glass / Tech Look) ---
-        // Material for the "Complex" un-split task
         const complexMaterial = new THREE.MeshPhysicalMaterial({
             color: 0x1f0d3d,
             emissive: 0x2a1052,
@@ -297,34 +304,26 @@
             metalness: 0.8,
             clearcoat: 1.0,
             clearcoatRoughness: 0.1,
-            wireframe: true, // Gives a structural/complex feel
+            wireframe: true,
             transparent: true,
             opacity: 0.8
         });
 
-        // Material for the "Split" manageable tasks
         const simpleMaterial = new THREE.MeshStandardMaterial({
-            color: 0xD946EF, // Fuchsia
+            color: 0xD946EF,
             emissive: 0x4C1D95,
             roughness: 0.2,
             metalness: 0.7,
         });
 
-        // --- Objects ---
-        
-        // 1. The "Big Task" Object (Center, Complex)
         const bigTaskGeometry = new THREE.IcosahedronGeometry(4, 2);
         const bigTask = new THREE.Mesh(bigTaskGeometry, complexMaterial);
         scene.add(bigTask);
 
-        // 2. The "Split Tasks" (Multiple small objects)
         const splitTasksGroup = new THREE.Group();
         scene.add(splitTasksGroup);
-        
         const splitObjects = [];
-        const numSplits = 40; // Number of small tasks
-        
-        // Geometries for variety
+        const numSplits = 40;
         const geometries = [
             new THREE.TetrahedronGeometry(0.5),
             new THREE.BoxGeometry(0.7, 0.7, 0.7),
@@ -333,199 +332,90 @@
 
         for (let i = 0; i < numSplits; i++) {
             const geom = geometries[Math.floor(Math.random() * geometries.length)];
-            const mesh = new THREE.Mesh(geom, simpleMaterial.clone()); // clone to allow individual color morphing later
-            
-            // Random target positions for when they are fully "split" (spread out)
+            const mesh = new THREE.Mesh(geom, simpleMaterial.clone());
             const targetX = (Math.random() - 0.5) * 30;
             const targetY = (Math.random() - 0.5) * 20;
             const targetZ = (Math.random() - 0.5) * 15 - 5;
-            
-            // Start positions inside the main big task
-            mesh.position.set(
-                (Math.random() - 0.5) * 2,
-                (Math.random() - 0.5) * 2,
-                (Math.random() - 0.5) * 2
-            );
-            
-            // Store target data for animation
-            mesh.userData = {
-                targetPos: new THREE.Vector3(targetX, targetY, targetZ),
-                startPos: mesh.position.clone(),
-                rotSpeedX: (Math.random() - 0.5) * 0.02,
-                rotSpeedY: (Math.random() - 0.5) * 0.02
-            };
-            
-            // Initially scaled down
+            mesh.position.set((Math.random() - 0.5) * 2, (Math.random() - 0.5) * 2, (Math.random() - 0.5) * 2);
+            mesh.userData = { targetPos: new THREE.Vector3(targetX, targetY, targetZ), startPos: mesh.position.clone(), rotSpeedX: (Math.random() - 0.5) * 0.02, rotSpeedY: (Math.random() - 0.5) * 0.02 };
             mesh.scale.set(0.01, 0.01, 0.01);
-            
             splitTasksGroup.add(mesh);
             splitObjects.push(mesh);
         }
 
-        // 3. Community Particles (Background dust)
         const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 1000;
-        const posArray = new Float32Array(particlesCount * 3);
-        
-        for(let i = 0; i < particlesCount * 3; i++) {
-            // Spread particles over a large volume
-            posArray[i] = (Math.random() - 0.5) * 60; 
-        }
-        
+        const posArray = new Float32Array(1000 * 3);
+        for(let i = 0; i < 3000; i++) posArray[i] = (Math.random() - 0.5) * 60;
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-        const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.05,
-            color: 0xE9D5FF,
-            transparent: true,
-            opacity: 0.6,
-            blending: THREE.AdditiveBlending
-        });
-        
-        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        const particlesMesh = new THREE.Points(particlesGeometry, new THREE.PointsMaterial({ size: 0.05, color: 0xE9D5FF, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending }));
         scene.add(particlesMesh);
 
-        // --- Interaction & Animation Logic ---
-        
-        // Scroll Tracking
         let currentScroll = 0;
         let targetScroll = 0;
         let scrollVelocity = 0;
-        
         window.addEventListener('scroll', () => {
-            // Normalize scroll based on document height
             const maxScroll = document.body.scrollHeight - window.innerHeight;
             targetScroll = window.scrollY / maxScroll;
         });
 
-        // Base object positioning (responsive)
         const updateBasePositions = () => {
             const isMobile = window.innerWidth < 768;
-            if (isMobile) {
-                bigTask.position.y = 2; // Move up on mobile to avoid text
-                bigTask.scale.set(0.7, 0.7, 0.7);
-            } else {
-                bigTask.position.y = 0;
-                bigTask.position.x = 3; // Shift right on desktop for layout
-                bigTask.scale.set(1, 1, 1);
-            }
+            bigTask.position.y = isMobile ? 2 : 0;
+            bigTask.position.x = isMobile ? 0 : 3;
+            bigTask.scale.setScalar(isMobile ? 0.7 : 1);
         };
         updateBasePositions();
 
-        // Mouse interaction for slight parallax
-        let mouseX = 0;
-        let mouseY = 0;
-        let targetMouseX = 0;
-        let targetMouseY = 0;
-        const windowHalfX = window.innerWidth / 2;
-        const windowHalfY = window.innerHeight / 2;
-
-        document.addEventListener('mousemove', (event) => {
-            targetMouseX = (event.clientX - windowHalfX) * 0.001;
-            targetMouseY = (event.clientY - windowHalfY) * 0.001;
+        let mouseX = 0, mouseY = 0, targetMouseX = 0, targetMouseY = 0;
+        document.addEventListener('mousemove', (e) => {
+            targetMouseX = (e.clientX - window.innerWidth/2) * 0.001;
+            targetMouseY = (e.clientY - window.innerHeight/2) * 0.001;
         });
 
-        // --- Render Loop ---
         const clock = new THREE.Clock();
-
         function animate() {
             requestAnimationFrame(animate);
             const elapsedTime = clock.getElapsedTime();
-
-            // Smooth scroll interpolation (Lerp)
             const previousScroll = currentScroll;
-            currentScroll += (targetScroll - currentScroll) * 0.05; // 0.05 dictates smoothness
-            
-            // Calculate velocity (difference between frames)
+            currentScroll += (targetScroll - currentScroll) * 0.05;
             scrollVelocity = Math.abs(currentScroll - previousScroll) * 100;
 
-            // 1. Mouse Parallax
             mouseX += (targetMouseX - mouseX) * 0.05;
             mouseY += (targetMouseY - mouseY) * 0.05;
             camera.position.x += (mouseX * 5 - camera.position.x) * 0.05;
             camera.position.y += (-mouseY * 5 - camera.position.y) * 0.05;
             camera.lookAt(scene.position);
 
-            // 2. Animate "Big Task" (Complex object)
-            // It rotates faster based on scroll velocity
-            const baseRotSpeed = 0.002;
-            const activeRotSpeed = baseRotSpeed + (scrollVelocity * 0.05);
-            
+            const activeRotSpeed = 0.002 + (scrollVelocity * 0.05);
             bigTask.rotation.x += activeRotSpeed;
             bigTask.rotation.y += activeRotSpeed * 1.5;
 
-            // As we scroll down (currentScroll increases), Big Task dissolves/shrinks
-            // Let's make it fully dissolve by 40% scroll
             const dissolveProgress = Math.min(Math.max(currentScroll / 0.4, 0), 1);
-            
-            // Scale down Big Task
-            const currentScale = 1 - (dissolveProgress * 0.95); // shrinks to 5% size
-            bigTask.scale.setScalar(currentScale > 0 ? currentScale : 0);
-            
-            // Change color of big task based on scroll (morphing)
-            // Morph from dark purple to intense magenta before it vanishes
-            const colorA = new THREE.Color(0x1f0d3d);
-            const colorB = new THREE.Color(0xD946EF);
-            complexMaterial.emissive.copy(colorA).lerp(colorB, dissolveProgress);
+            bigTask.scale.setScalar(Math.max(1 - (dissolveProgress * 0.95), 0));
+            complexMaterial.emissive.copy(new THREE.Color(0x1f0d3d)).lerp(new THREE.Color(0xD946EF), dissolveProgress);
 
-            // 3. Animate "Split Tasks" (Small objects)
-            // They spread out as Big Task dissolves
             splitObjects.forEach((mesh, index) => {
-                // Rotation (affected by speed of scrolling)
                 mesh.rotation.x += mesh.userData.rotSpeedX + (scrollVelocity * 0.02);
                 mesh.rotation.y += mesh.userData.rotSpeedY + (scrollVelocity * 0.02);
-
-                // Morphing / Spreading Logic based on scroll
-                // Spreading starts after 10% scroll, finishes around 60%
-                let spreadProgress = Math.max(0, currentScroll - 0.1) / 0.5;
-                spreadProgress = Math.min(spreadProgress, 1);
-                
-                // Add some easing to the spread
+                let spreadProgress = Math.min(Math.max(0, currentScroll - 0.1) / 0.5, 1);
                 const easeOutQuart = 1 - Math.pow(1 - spreadProgress, 4);
-
-                // Lerp position from start inside Big Task to target scatter position
                 mesh.position.lerpVectors(mesh.userData.startPos, mesh.userData.targetPos, easeOutQuart);
-
-                // Scale up logic: they grow as they spread out
-                let scaleVal = easeOutQuart * 1.5;
-                mesh.scale.setScalar(scaleVal);
-
-                // Color Morphing: Change color based on their position in space to create a gradient effect
-                const hue = 0.75 + (Math.sin(elapsedTime * 0.5 + index) * 0.1); // Ranges roughly in purples/pinks
-                mesh.material.color.setHSL(hue, 0.8, 0.5);
-                mesh.material.emissive.setHSL(hue, 0.9, 0.2);
+                mesh.scale.setScalar(easeOutQuart * 1.5);
+                mesh.material.color.setHSL(0.75 + (Math.sin(elapsedTime * 0.5 + index) * 0.1), 0.8, 0.5);
             });
 
-            // 4. Animate Community Particles
-            // They drift slowly, but speed up significantly when scrolling
             particlesMesh.rotation.y = elapsedTime * 0.05;
-            particlesMesh.rotation.x = elapsedTime * 0.02;
-            
-            // Apply scroll velocity to particle scale for a "warp" effect
-            const warpFactor = 1 + (scrollVelocity * 2);
-            particlesMesh.scale.z = warpFactor;
-            
-            // Move lighting slightly for dynamic shadows
-            pointLight1.position.x = Math.sin(elapsedTime * 0.5) * 10;
-            pointLight2.position.z = Math.cos(elapsedTime * 0.3) * 10;
-
+            particlesMesh.scale.z = 1 + (scrollVelocity * 2);
             renderer.render(scene, camera);
         }
-
-        // Start Animation Loop
         animate();
 
-        // --- Window Resize Handling ---
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
             updateBasePositions();
         });
-
-        // Initialize scroll to top to prevent weird starting states on reload
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
     </script>
 </body>
 </html>
